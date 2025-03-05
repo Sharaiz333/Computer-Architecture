@@ -1,0 +1,21 @@
+START:
+    INP
+    STA NUM1
+    INP
+    STA NUM2
+    LDA NUM2
+    ADD NUM1
+    STA NUM2
+    INP
+    STA NUM3
+    LDA NUM3
+    ADD NUM2
+    STA RESULT
+    LDA RESULT
+    OUT
+    HLT
+
+NUM1:    .data  1 0
+NUM2:   .data  1 0
+NUM3:   .data  1 0
+RESULT: .data  1 0

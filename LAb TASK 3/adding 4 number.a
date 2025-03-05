@@ -1,0 +1,22 @@
+START:
+    INP
+    STA NUM
+    INP
+    CMA
+    INC
+    ADD NUM
+    STA TEMP
+
+    LDA TEMP
+    ADD HARD_CODE1
+    STA TEMP
+
+    LDA TEMP
+    ADD HARD_CODE2
+    OUT
+    HLT
+
+NUM:    .data  1 0
+TEMP:   .data  1 0
+HARD_CODE1: .data 1 2
+HARD_CODE2: .data 1 1
